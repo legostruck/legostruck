@@ -1,0 +1,45 @@
+
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecological Food Pantry</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#upload-section">Upload Receipt</a></li>
+                <li><a href="#ingredient-display">Extracted Ingredients</a></li>
+                <li><a href="#health-analysis">Health Analysis</a></li>
+                <li><a href="#recipe-suggestions">Recipe Suggestions</a></li>
+            </ul>
+        </nav>
+        <h1>Ecological Food Pantry</h1>
+    </header>
+    <main>
+        <section id="upload-section" class="upload-section">
+            <h2>Upload Receipt</h2>
+            <input type="file" id="receipt-input" accept="image/*">
+            <button id="upload-button">Upload</button>
+        </section>
+        <section id="ingredient-display" class="ingredient-display">
+            <h2>Extracted Ingredients</h2>
+            <ul id="ingredient-list"></ul>
+        </section>
+        <section id="health-analysis" class="health-analysis">
+            <h2>Health Analysis</h2>
+            <p id="health-score"></p>
+            <ul id="health-recommendations"></ul>
+        </section>
+        <section id="recipe-suggestions" class="recipe-suggestions">
+            <h2>Recipe Suggestions</h2>
+            <ul id="recipe-list"></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
